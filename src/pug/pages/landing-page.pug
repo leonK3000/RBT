@@ -1,0 +1,54 @@
+extends ../layout/main.pug
+
+block variables 
+  - var title = "Landing page"
+  - var descriptionName = "Landing page"
+  - var descriptionContent = "Landing page"
+
+  - var contentWrapperclass = "landing-page-content-wrapper"
+  - var pageClass = "landing-page"
+  - var contentClass = "landing-page-content"
+block content
+  .landing-page-wrapper
+    .landing-page-main.landing-page-item
+      .landing-page-main__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
+      ul(class="landing-page-main__menu")
+        li(class="landing-page-main__menu-item")
+          a(href="#") Ремонт холодильников
+        li(class="landing-page-main__menu-item")
+          a(href="#") Ремонт стиральных машин
+        li(class="landing-page-main__menu-item")
+          a(href="#") Ремонт посудомоечных машин
+        li(class="landing-page-main__menu-item")
+          a(href="#") Ремонт электрических плит
+      .landing-page-main__down-pointer.down-pointer НАШИ ПРИЕМУЩЕСТВА
+    .landing-page-about.landing-page-item
+      .landing-page-about__title Наши приемущества:
+      ul(class="landing-page-about__menu")
+        li(class="landing-page-about__menu-item") У нас бесплатный выезд и диагностика неисправности
+        li(class="landing-page-about__menu-item") Ремонт начинается всегда после согласования его стоимости с Вами
+        li(class="landing-page-about__menu-item") Мы всегда предоставляем гарантию на выполненые работы
+        li(class="landing-page-about__menu-item") Мы используем только качественные и оригинальные запчасти
+      .landing-page-about__down-pointer.down-pointer ПОРЯДОК ПРЕДОСТАВЛЕНИЯ УСЛУГИ   
+    .landing-page-operating.landing-page-item
+      .landing-page-operating__title Порядок предостивления услуги:
+      ul(class="landing-page-operating__menu")
+        li(class="landing-page-operating__menu-item") Позвоните нам или закажите обратный вызов. 
+        |Мы проконсультируем Вас о возможных неисправностях техники и необходимом ремонте.
+        a(href="#" class="") Также Вы можете воспользоваться нашим преложением для определения неисправности.
+        li(class="landing-page-operating__menu-item") Выезд мастера осуществляется в течение 30 минут после вызова или в удобное для Вас время.
+        li(class="landing-page-operating__menu-item") Диагностика неисправности.
+        li(class="landing-page-operating__menu-item") Выполнение ремонта.  
+    .landing-page-call.landing-page-item
+      form
+
+    
+  
+ 
+    
+    
+      
+        
+    
+        
+    

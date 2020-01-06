@@ -1,0 +1,21 @@
+include ../../blocks/page-blocks/page-blocks
+
+block variables
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        title #{title}
+        meta(name=descriptionName, content=descriptionContent)
+        meta(name="viewport" content="width=device-width initial-scale=1")
+        block head
+
+    body(class=pageClass)
+        .wrapper
+            +header
+            div(class="content-wrapper" + " " + contentWrapperclass)
+                div(class="content" + " " + contentClass)
+                    block content
+            block line
+            //- +footer
