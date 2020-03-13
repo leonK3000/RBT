@@ -1,0 +1,5 @@
+.header__title {
+    grid-area: title;
+    @include justify-center;
+    @include fontH1;
+}

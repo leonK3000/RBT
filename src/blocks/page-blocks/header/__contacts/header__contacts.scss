@@ -1,0 +1,4 @@
+.header__contacts {
+    grid-area: contacts;
+    @include justify-center;
+}

@@ -1,0 +1,18 @@
+@import "../../../../mixins/mixins.scss";
+
+.header-content {
+    min-width: $minWidth;
+    max-width: $maxWidth;
+    
+    // @include justify-space-between;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "logo title"
+        "logo header-menu"
+        "logo contacts";
+    grid-template-rows: 30% 40% 30%;
+    grid-template-columns: rem(200) 100%;
+}
+

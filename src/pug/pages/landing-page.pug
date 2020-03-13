@@ -1,17 +1,11 @@
 extends ../layout/main.pug
 
 block variables 
-  - var title = "Landing page"
-  - var descriptionName = "Landing page"
-  - var descriptionContent = "Landing page"
 
-  - var contentWrapperclass = "landing-page-content-wrapper"
-  - var pageClass = "landing-page"
-  - var contentClass = "landing-page-content"
 block content
   .landing-page-wrapper
     .landing-page-main.landing-page-item
-      .landing-page-main__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
+      .landing-page-main__title.landing-page-block-title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
       ul(class="landing-page-main__menu")
         li(class="landing-page-main__menu-item")
           a(href="#") Ремонт холодильников
@@ -21,17 +15,17 @@ block content
           a(href="#") Ремонт посудомоечных машин
         li(class="landing-page-main__menu-item")
           a(href="#") Ремонт электрических плит
-      .landing-page-main__down-pointer.down-pointer НАШИ ПРИЕМУЩЕСТВА
+
     .landing-page-about.landing-page-item
-      .landing-page-about__title Наши приемущества:
+      .landing-page-about__title.landing-page-block-title НАШИ ПРИЕМУЩЕСТВА
       ul(class="landing-page-about__menu")
         li(class="landing-page-about__menu-item") У нас бесплатный выезд и диагностика неисправности
         li(class="landing-page-about__menu-item") Ремонт начинается всегда после согласования его стоимости с Вами
         li(class="landing-page-about__menu-item") Мы всегда предоставляем гарантию на выполненые работы
         li(class="landing-page-about__menu-item") Мы используем только качественные и оригинальные запчасти
-      .landing-page-about__down-pointer.down-pointer ПОРЯДОК ПРЕДОСТАВЛЕНИЯ УСЛУГИ   
+
     .landing-page-operating.landing-page-item
-      .landing-page-operating__title Порядок предостивления услуги:
+      .landing-page-operating__title.landing-page-block-title ПОРЯДОК ПРЕДОСТАВЛЕНИЯ УСЛУГИ
       ul(class="landing-page-operating__menu")
         li(class="landing-page-operating__menu-item") Позвоните нам или закажите обратный вызов. 
         |Мы проконсультируем Вас о возможных неисправностях техники и необходимом ремонте.
@@ -40,7 +34,27 @@ block content
         li(class="landing-page-operating__menu-item") Диагностика неисправности.
         li(class="landing-page-operating__menu-item") Выполнение ремонта.  
     .landing-page-call.landing-page-item
-      
+      .landing-page-call__title КАК С НАМИ СВЯЗАТЬСЯ
+      .landing-page-call__direct-call
+        .direct-call__title Позвоните нам
+        .direct-call__text Позвоните нам по телефону и сообщите о неисправностях Вашей бытовой техники
+        .direct-call__phone-number-button 
+          input(type="button" value="8(800) 000-00-00")
+      .landing-page-call__callback
+        .callback-form       
+          form(action="")
+          .callback-form__title Заказать звонок
+          .callback-form__text Заполните форму и мы перезвоним Вам в течение 3-х минут
+          .callback-form__name
+            input(class="callback-form__input-name" type=text, placeholder="Ваше имя")
+          .callback-form__phone-number
+            input(class="callback-form__input-phone-number" type=text, placeholder="+7 (___) ___-__-__")
+          .callback-form__button
+            input(class="callback-form__input-button" type="button", value="Позвоните мне!")
+            
+
+
+
 
     
   

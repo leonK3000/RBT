@@ -1,0 +1,27 @@
+.logo {  
+    display: flex;
+    align-items: center;
+
+}
+
+.logo__img {
+ 
+}
+.logo-svg {
+    width: rem(400);
+    stroke:#E31F24
+}
+
+.logo-svg__elem1, .logo-svg__elem2, .logo-svg__elem3, .logo-svg__elem4 {
+    fill: $dark100;
+    fill-rule:nonzero;
+   
+}
+.fil0 {
+    fill:none;
+}
+.str0 {
+    stroke:$red;
+    stroke-width:84.66;
+}
+

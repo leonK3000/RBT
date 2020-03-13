@@ -1,4 +1,15 @@
+@import "../blocks/page-blocks/header/header.scss";
+@import "../vars/vars.scss";
+@import "../mixins/mixins.scss";
+@import "../blocks/elements/elements.scss";
+@import "../fonts/fonts.scss";
 
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
 html {
     font-size: 24px;

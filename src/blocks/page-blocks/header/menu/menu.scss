@@ -1,0 +1,6 @@
+.menu {
+    grid-area: header-menu;
+    display: flex;
+    @include justify-space-between;
+    padding: 0 rem(150);
+}

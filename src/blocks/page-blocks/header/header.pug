@@ -1,23 +1,28 @@
+include ../../elements/logo/logo.pug
+
 mixin header
     header(class="header-wrapper")
         .header-content
-            .header__logo-container
-                a(href="index.html")
+            .header__logo-container 
+                +logo
+
+                a(href="index.html") 
+                    
                     //- +logo
+            .header__title СЛУЖБА ВЫЕЗДНОГО РЕМОНТА БЫТОВОЙ ТЕХНИКИ
             menu(class="menu")
                 li(class="menu__item")
-                    a(href="#") Главная
+                    a(href="#") ГЛАВНАЯ
                 li(class="menu__item")
-                    a(href="#") О нас
+                    a(href="#") О НАС
                 li(class="menu__item")
-                    a(href="#") Услуги
+                    a(href="#") УСЛУГИ
                 li(class="menu__item")
-                    a(href="#") Вызов мастера
+                    a(href="#") ВЫЗВАТЬ МАСТЕРА
                 li(class="menu__item")
                     a(href="#") FAQ
             .header__contacts
-                .contact1 +7 812 507 84 64
-                .contact2 +7 911 097 80 61
-            .header__call
-                a(href="#") вызвать мастера
+                .contact1 8 800 200 10 30
+                
+            
                 
