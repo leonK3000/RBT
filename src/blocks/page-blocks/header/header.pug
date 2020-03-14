@@ -9,7 +9,7 @@ mixin header
                 a(href="index.html") 
                     
                     //- +logo
-            .header__title СЛУЖБА ВЫЕЗДНОГО РЕМОНТА БЫТОВОЙ ТЕХНИКИ
+            //- .header__title СЛУЖБА ВЫЕЗДНОГО РЕМОНТА БЫТОВОЙ ТЕХНИКИ
             menu(class="menu")
                 li(class="menu__item")
                     a(href="#") ГЛАВНАЯ
@@ -22,7 +22,9 @@ mixin header
                 li(class="menu__item")
                     a(href="#") FAQ
             .header__contacts
-                .contact1 8 800 200 10 30
+                a(class="contact-tel" href="tel:88002001030") 8 800 200 10 30
+                .contact-adress г. Санкт-Петербург, Проcпект Просвещения, д. 53
+        .header__line
                 
             
                 

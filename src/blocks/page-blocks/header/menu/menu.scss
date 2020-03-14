@@ -2,5 +2,8 @@
     grid-area: header-menu;
     display: flex;
     @include justify-space-between;
-    padding: 0 rem(150);
+    padding: 0 rem(50);
+    @include fontBody($font-size: rem(15), $line-height: rem(18), $color: $dark75);
+    
+    
 }

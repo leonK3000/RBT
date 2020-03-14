@@ -9,10 +9,10 @@
     height: 100%;
     display: grid;
     grid-template-areas:
-        "logo title"
-        "logo header-menu"
-        "logo contacts";
-    grid-template-rows: 30% 40% 30%;
-    grid-template-columns: rem(200) 100%;
+        // "logo title"
+        "logo contacts"
+        "logo header-menu";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: rem(400) 1fr;
 }
 

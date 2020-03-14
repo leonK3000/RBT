@@ -1,0 +1,17 @@
+.contact-adress {
+    position: relative;
+    padding-left: rem(30);
+    
+    &:before {
+        content: "business";
+        @include material-icon(rem(20));
+        position: absolute;
+        left: rem(5);
+        top: rem(2);
+        
+        
+        // @include justify-center;
+  
+        
+    }
+}

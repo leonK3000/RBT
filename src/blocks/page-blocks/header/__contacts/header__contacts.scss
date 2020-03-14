@@ -1,4 +1,9 @@
 .header__contacts {
     grid-area: contacts;
-    @include justify-center;
+    @include justify-space-between;
+    @include fontH2(rem(16));
+    padding: 0 rem(35);
+    color: $dark75;
+ 
+
 }

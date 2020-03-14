@@ -1,6 +1,12 @@
 // @import "../../../../../mixins/mixins.scss";
 
-.menu_item {
+.menu__item a {
     // @include justify-space-between;
-    background-color: red;
+    font-weight: bolder;
+    color: $dark75;
+    &:hover {
+        color: $red;
+       
+    }
+ 
 }

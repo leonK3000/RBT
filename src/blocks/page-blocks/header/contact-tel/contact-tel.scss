@@ -1,0 +1,24 @@
+.contact-tel {
+    color: $dark75;
+    position: relative;
+    padding-left: rem(30);
+    
+    &:before {
+        content: "call";
+        @include material-icon(rem(20));
+        position: absolute;
+        left: rem(5);
+        top: rem(2);
+    }
+    &:after {
+        content: "БЕСПЛАТНЫЙ ЗВОНОК";
+        position: absolute;
+        font-size: rem(10);
+        left: rem(6);
+        bottom:rem(-20);
+    }
+    &:hover {
+        color: $red;
+    }
+
+}
