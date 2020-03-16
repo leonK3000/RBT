@@ -1,0 +1,16 @@
+.landing-page-main-services-item {
+    
+    
+   & > a {
+    display: flex;
+    flex-direction: column;;
+   }
+   &:hover {
+       border: rem(2) solid $red;
+       border-radius: rem(10);
+       & .landing-page-main-services-item__title {
+           color: $red;
+       }
+   }
+
+}

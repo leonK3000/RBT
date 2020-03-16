@@ -1,0 +1,8 @@
+.landing-page-main-services {
+    display: grid;
+    // grid-template-areas:
+    //     "logo contacts"
+    //     "logo header-menu";
+    // grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+}

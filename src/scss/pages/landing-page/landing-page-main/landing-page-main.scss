@@ -1,0 +1,13 @@
+@import "./__title/landing-page-main__title.scss";
+@import "./landing-page-main-services-item/landing-page-main-services-item.scss";
+@import "./landing-page-main-services-item/__img/landing-page-main-services-item__img.scss";
+@import "./landing-page-main-services-item/__title/landing-page-main-services-item__title.scss";
+@import "./landing-page-main-services/landing-page-main-services.scss";
+
+.landing-page-main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    padding-top: rem(150);
+  
+}

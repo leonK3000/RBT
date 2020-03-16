@@ -4,17 +4,21 @@ block variables
 
 block content
   .landing-page-wrapper
-    .landing-page-main.landing-page-item
-      .landing-page-main__title.landing-page-block-title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
-      ul(class="landing-page-main__menu")
-        li(class="landing-page-main__menu-item")
-          a(href="#") Ремонт холодильников
-        li(class="landing-page-main__menu-item")
-          a(href="#") Ремонт стиральных машин
-        li(class="landing-page-main__menu-item")
-          a(href="#") Ремонт посудомоечных машин
-        li(class="landing-page-main__menu-item")
-          a(href="#") Ремонт электрических плит
+    .landing-page-main
+      .landing-page-main__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
+      ul(class="landing-page-main-services")
+        li(class="landing-page-main-services-item")
+          a(href="#")
+            .landing-page-main-services-item__title Ремонт холодильников
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/fridge.jpg")
+        li(class="landing-page-main-services-item")
+          a(href="#")
+            .landing-page-main-services-item__title Ремонт стиральных машин
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/wash-mach.jpg")
+        li(class="landing-page-main-services-item")
+          a(href="#") 
+            .landing-page-main-services-item__title Ремонт посудомоечных машин
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/dish-wash.jpg")
 
     .landing-page-about.landing-page-item
       .landing-page-about__title.landing-page-block-title НАШИ ПРИЕМУЩЕСТВА

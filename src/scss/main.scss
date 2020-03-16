@@ -3,6 +3,7 @@
 @import "../mixins/mixins.scss";
 @import "../blocks/elements/elements.scss";
 @import "../fonts/fonts.scss";
+@import "./pages/landing-page/landing-page.scss";
 
 * {
     margin: 0;
@@ -50,11 +51,15 @@ body {
 .content-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 .content {
     position: relative;
-
+    min-width: $minWidth;
+    max-width: $maxWidth;
     height: 100%;
+
     // min-width: 800px;
     // max-width: 1200px;
     // width: 100%;

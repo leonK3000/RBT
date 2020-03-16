@@ -1,0 +1,6 @@
+.landing-page-main-services-item__title {
+    @include fontH2;
+    @include justify-center;
+    height: rem(50);
+    color: $dark75;
+}
