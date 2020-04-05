@@ -1,6 +1,7 @@
-.landing-page-main__title {
+.landing-page__title {
     @include fontH1;
     @include justify-center;
     height: rem(100);
     color: $red;
+    text-align: center;
 }

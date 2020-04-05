@@ -1,13 +1,12 @@
-@import "./__title/landing-page-main__title.scss";
 @import "./landing-page-main-services-item/landing-page-main-services-item.scss";
 @import "./landing-page-main-services-item/__img/landing-page-main-services-item__img.scss";
 @import "./landing-page-main-services-item/__title/landing-page-main-services-item__title.scss";
 @import "./landing-page-main-services/landing-page-main-services.scss";
+@import "./__text/landing-page-main__text.scss";
+    
 
 .landing-page-main {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 100px);
-    padding-top: rem(150);
-  
+    $rrr: 150px;
+    height: calc(100vh - 140px);
+    padding: rem(50) 0;
 }

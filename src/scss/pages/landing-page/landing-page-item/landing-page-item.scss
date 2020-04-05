@@ -1,0 +1,10 @@
+.landing-page-item {
+    display: flex;
+    flex-direction: column;
+    @include justify-space-between;
+    min-height: 650px;
+    box-sizing: content-box;
+    
+    
+    
+}

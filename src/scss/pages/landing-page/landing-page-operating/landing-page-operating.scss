@@ -1,0 +1,11 @@
+@import "./landing-page-operating-box/landing-page-operating-box";
+@import "./landing-page-operating-item/landing-page-operating-item.scss";
+@import "./landing-page-operating-item/__arrow/landing-page-operating-item__arrow.scss";
+@import "./landing-page-operating-item/__text/landing-page-operating-item__text.scss";
+@import "./landing-page-operating-item/__img/landing-page-operating-item__img";
+
+.landing-page-operating {
+    height: calc(100vh - 80px);
+    padding: rem(50) 0;
+    
+}

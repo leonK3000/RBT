@@ -1,0 +1,9 @@
+.landing-page-operating-item__arrow {
+    width: rem(100);
+    height: rem(200);
+    @include material-icon($font-size: rem(70));
+    color: $dark75;
+    @include justify-center;
+
+
+}

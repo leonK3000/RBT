@@ -1,0 +1,5 @@
+.landing-page-advantage-items {
+    @include justify-space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,44 +1,94 @@
 extends ../layout/main.pug
 
+//- include ../../blocks/elements/elements.pug
+
 block variables 
 
 block content
+  include ../../blocks/elements/elements.pug
   .landing-page-wrapper
-    .landing-page-main
-      .landing-page-main__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
+    .landing-page-main.landing-page-item
+      .landing-page__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
       ul(class="landing-page-main-services")
         li(class="landing-page-main-services-item")
           a(href="#")
             .landing-page-main-services-item__title Ремонт холодильников
-            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/fridge.jpg")
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/fridge.png")
         li(class="landing-page-main-services-item")
           a(href="#")
             .landing-page-main-services-item__title Ремонт стиральных машин
-            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/wash-mach.jpg")
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/wash-mach.png")
         li(class="landing-page-main-services-item")
           a(href="#") 
             .landing-page-main-services-item__title Ремонт посудомоечных машин
-            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/dish-wash.jpg")
-
-    .landing-page-about.landing-page-item
-      .landing-page-about__title.landing-page-block-title НАШИ ПРИЕМУЩЕСТВА
-      ul(class="landing-page-about__menu")
-        li(class="landing-page-about__menu-item") У нас бесплатный выезд и диагностика неисправности
-        li(class="landing-page-about__menu-item") Ремонт начинается всегда после согласования его стоимости с Вами
-        li(class="landing-page-about__menu-item") Мы всегда предоставляем гарантию на выполненые работы
-        li(class="landing-page-about__menu-item") Мы используем только качественные и оригинальные запчасти
+            img(class="landing-page-main-services-item__img" src="./assets/img/pictures/dish-wash.png")
+      .landing-page-main__text 
+        a(href="#") ПОЗВОНИТЕ НАМ! 
+        |ВАС ПРОКОСУЛЬТИРУЕТ НЕ ПРОСТО ДИСПЕТЧЕР, А ОПЫТНЫЙ МАСТЕР ПО РЕМОНТУ БЫТОВОЙ ТЕХНИКИ. 
+        br
+        |ВОЗМОЖНО В ВАШЕМ СЛУЧАЕ РЕМОНТ НЕ ТРЕБУЕТСЯ!
+       
+    
+    .landing-page-advantage.landing-page-item
+      .landing-page__title НАШИ ПРИЕМУЩЕСТВА
+      .landing-page-advantage-items
+        +advantageItem(
+          "БЕСПЛАТНАЯ ДИАГНОСТИКА",
+          "У нас бесплатный выезд и диагностика неисправности. Вы платите только за ремонт",
+          "./assets/img/pictures/icon_freeCheckOut.svg"
+        )
+        +advantageItem(
+          "БЫСТРЫЙ ВЫЕЗД К КЛИЕНТУ",
+          "Выезд мастера в течение 30 минут или в удобное для Вас время",
+          "./assets/img/pictures/icon_stopwatch.svg"
+        )
+        +advantageItem(
+          "ЧЕСТНОСТЬ И ОТВЕТСТВЕННОСТЬ",
+          "Ремонт начинается только после согласования стоимости",
+          "./assets/img/pictures/icon_handShake.svg"
+        )
+        +advantageItem(
+          "НАДЕЖНОСТЬ",
+          "Мы всегда даем гарантию на выполненные работы до 3-х лет",
+          "./assets/img/pictures/icon_warranty.svg"
+        )
+        +advantageItem(
+          "КАЧЕСТВО",
+          "Мы используем только качественные запасные части",
+          "./assets/img/pictures/icon_quality.svg"
+        )
+        +advantageItem(
+          "НИЗКАЯ ЦЕНА",
+          "У нас одни из самых низких цен в городе",
+          "./assets/img/pictures/icon_save.svg"
+        )
+        //- li(class="landing-page-advantage__item") У нас бесплатный выезд и диагностика неисправности
+        //- li(class="landing-page-advantage__item") Ремонт начинается всегда после согласования его стоимости с Вами
+        //- li(class="landing-page-advantage__item") Мы всегда предоставляем гарантию на выполненые работы
+        //- li(class="landing-page-advantage__item") Мы используем только качественные и оригинальные запчасти
 
     .landing-page-operating.landing-page-item
-      .landing-page-operating__title.landing-page-block-title ПОРЯДОК ПРЕДОСТАВЛЕНИЯ УСЛУГИ
-      ul(class="landing-page-operating__menu")
-        li(class="landing-page-operating__menu-item") Позвоните нам или закажите обратный вызов. 
-        |Мы проконсультируем Вас о возможных неисправностях техники и необходимом ремонте.
-        a(href="#" class="") Также Вы можете воспользоваться нашим преложением для определения неисправности.
-        li(class="landing-page-operating__menu-item") Выезд мастера осуществляется в течение 30 минут после вызова или в удобное для Вас время.
-        li(class="landing-page-operating__menu-item") Диагностика неисправности.
-        li(class="landing-page-operating__menu-item") Выполнение ремонта.  
+      .landing-page__title  ПОРЯДОК ПРЕДОСТАВЛЕНИЯ УСЛУГИ
+      .landing-page-operating-box
+        .landing-page-operating-item
+          .landing-page-operating-item__text
+            a( href="tel:88002001030") Позвоните нам по бесплатному номеру или оставьте заявку
+          img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_phone.svg")
+        .landing-page-operating-item__arrow arrow_forward
+        .landing-page-operating-item 
+          .landing-page-operating-item__text Выезд мастера на место в течение 30 минут
+          img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_drive.svg")
+        .landing-page-operating-item__arrow arrow_forward
+        .landing-page-operating-item 
+          .landing-page-operating-item__text Диагностика неисправности и согласование цены
+          img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_diagn.svg")
+        .landing-page-operating-item__arrow arrow_forward
+        .landing-page-operating-item 
+          .landing-page-operating-item__text Выполнение ремонта
+          img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_repair.svg")
+
     .landing-page-call.landing-page-item
-      .landing-page-call__title КАК С НАМИ СВЯЗАТЬСЯ
+      .landing-page__title КАК С НАМИ СВЯЗАТЬСЯ
       .landing-page-call__direct-call
         .direct-call__title Позвоните нам
         .direct-call__text Позвоните нам по телефону и сообщите о неисправностях Вашей бытовой техники
@@ -55,18 +105,3 @@ block content
             input(class="callback-form__input-phone-number" type=text, placeholder="+7 (___) ___-__-__")
           .callback-form__button
             input(class="callback-form__input-button" type="button", value="Позвоните мне!")
-            
-
-
-
-
-    
-  
- 
-    
-    
-      
-        
-    
-        
-    

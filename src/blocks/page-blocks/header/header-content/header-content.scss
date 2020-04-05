@@ -3,10 +3,10 @@
 .header-content {
     min-width: $minWidth;
     max-width: $maxWidth;
+    height: rem(105);
     
     // @include justify-space-between;
     margin: auto;
-    height: 100%;
     display: grid;
     grid-template-areas:
         // "logo title"

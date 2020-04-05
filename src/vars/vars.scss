@@ -5,6 +5,7 @@ $dark100:#1F2041;
 $dark75: rgba(31, 32, 65, 0.75);
 $dark50: rgba(31, 32, 65, 0.5);
 $dark25: rgba(31, 32, 65, 0.25);
+$dark15: rgba(31, 32, 65, 0.15);
 $dark10: rgba(31, 32, 65, 0.1);
 $dark5: rgba(31, 32, 65, 0.05);
 $white: #FFFFFF;
@@ -23,8 +24,8 @@ $colorFontBody: $dark75;
 /*font names*/
 
 /*font-size*/
-$mainFontSize: 24px;
-$fontSizeH1: rem(24);
+$mainFontSize: 25px;
+$fontSizeH1: rem(28);
 $fontSizeH2: rem(19);
 $fontSizeH3: rem(16);
 $fontSizeBody: rem(14);

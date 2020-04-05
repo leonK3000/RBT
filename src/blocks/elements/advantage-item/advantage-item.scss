@@ -1,0 +1,34 @@
+@import "./__title/advantage-item__title.scss";
+@import "./__text/advantage-item__text";
+@import "./__img/advantage-item__img.scss";
+
+.advantage-item {
+    width: rem(300);
+    height: rem(300);
+    padding: rem(25);
+    margin: rem(15);
+    box-sizing: border-box;
+    border: rem(3) solid $dark75;
+    border-radius: rem(10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: $dark100;
+    user-select: none;
+    &:hover {
+        // border: rem(3) solid $red;
+        // color: $red;
+    }
+    &:hover > .advantage-item__text {
+        opacity: 1;
+        transition: 1s;
+
+    }
+    &:hover > .advantage-item__img  {
+        opacity: 0.75;
+        transform: scale(1.15);
+        transition: 1s;
+
+    }
+}

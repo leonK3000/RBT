@@ -1,0 +1,9 @@
+.landing-page-main__text {
+    text-align: center;
+    @include fontH3(rem(17));
+    color: $dark75;
+    width: 70%;
+    line-height: rem(30);
+
+
+}

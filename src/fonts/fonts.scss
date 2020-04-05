@@ -96,7 +96,7 @@
 
 /*Mixins*/
 
-@mixin fontH1($font-size: 24px, $line-height: 24px, $color: $dark100) {
+@mixin fontH1($font-size: $fontSizeH1, $line-height: 24px, $color: $dark100) {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-style: normal;

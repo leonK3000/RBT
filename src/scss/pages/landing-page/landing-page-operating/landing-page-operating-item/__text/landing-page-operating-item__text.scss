@@ -1,0 +1,7 @@
+.landing-page-operating-item__text {
+    @include fontBody(rem(18));
+    text-align: center;
+    & > a {
+        color: inherit;
+    }
+}

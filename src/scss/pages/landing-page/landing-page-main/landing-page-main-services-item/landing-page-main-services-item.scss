@@ -1,13 +1,15 @@
 .landing-page-main-services-item {
+    // width: rem(200);
     
-    
+    overflow: hidden;
    & > a {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+
    }
    &:hover {
-       border: rem(2) solid $red;
-       border-radius: rem(10);
+       transform: scale(1.1);  
+       transition: 1s; 
        & .landing-page-main-services-item__title {
            color: $red;
        }
