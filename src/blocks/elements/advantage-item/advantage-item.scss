@@ -3,17 +3,22 @@
 @import "./__img/advantage-item__img.scss";
 
 .advantage-item {
-    width: rem(300);
-    height: rem(300);
+    width: rem(500);
+    height: rem(170);
     padding: rem(25);
     margin: rem(15);
     box-sizing: border-box;
-    border: rem(3) solid $dark75;
-    border-radius: rem(10);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        "advantage_img advantage_title"
+        "advantage_img advantage_text";
+    grid-template-rows: 45% 55%;
+    grid-template-columns: rem(120) 1fr;
+
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // flex-direction: column;
     color: $dark100;
     user-select: none;
     &:hover {
@@ -27,7 +32,7 @@
     }
     &:hover > .advantage-item__img  {
         opacity: 0.75;
-        transform: scale(1.15);
+        transform: scale(1.1);
         transition: 1s;
 
     }

@@ -1,10 +1,13 @@
-.contact-adress {
-    position: relative;
+.contact-time {
+    
+    grid-area: time;
     padding-left: rem(30);
-    grid-area: adress;
+    font-size: rem(12);
+    color: $dark75;
+    position: relative;
     
     &:before {
-        content: "business";
+        content: "access_time";
         @include material-icon(rem(20));
         position: absolute;
         left: rem(5);
@@ -12,7 +15,7 @@
         
         
         
-        // @include justify-center;
+        
   
         
     }

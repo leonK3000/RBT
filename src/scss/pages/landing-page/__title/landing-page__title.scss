@@ -2,6 +2,10 @@
     @include fontH1;
     @include justify-center;
     height: rem(100);
+    width: 100%;
+    box-sizing: border-box;
     color: $red;
-    text-align: center;
+    // text-align: center;
+    // align-items: center;
+    // display: block;
 }

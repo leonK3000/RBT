@@ -6,7 +6,12 @@
     
 
 .landing-page-main {
-    $rrr: 150px;
-    height: calc(100vh - 140px);
-    padding: rem(50) 0;
+    height: 100vh;
+    min-height: rem(1000);
+    box-sizing: border-box;
+    padding-top: rem(150);
+    display: flex;
+    flex-direction: column;
+    @include justify-space-between;
+    padding-bottom: rem(100);
 }

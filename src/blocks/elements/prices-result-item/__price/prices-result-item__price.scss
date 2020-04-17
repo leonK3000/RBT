@@ -1,0 +1,24 @@
+
+
+.prices-result-item__price {
+    grid-area: price;
+    @include justify-center;
+    color: $red;
+    position: relative;
+    font-size: rem(20);
+
+    &:before {
+        content: "Стоимость ремонта от:";
+        font-size: rem(14);
+        line-height: rem(16);
+        color: $dark75;
+        position: absolute;
+        top: rem(20);
+        text-align: center;
+    }
+    &:after {
+        content: "р."
+    }
+}
+
+

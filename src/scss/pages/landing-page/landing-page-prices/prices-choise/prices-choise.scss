@@ -1,0 +1,9 @@
+.prices-choise {
+    // border: rem(1) solid $dark50;
+    background-color: $dark10;
+    display: grid;
+    box-sizing: border-box;
+
+    grid-template-rows: rem(70);
+    grid-template-columns: 1fr 1fr 1fr;
+}

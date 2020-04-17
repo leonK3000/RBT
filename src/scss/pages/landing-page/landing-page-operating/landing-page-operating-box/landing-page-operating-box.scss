@@ -1,4 +1,5 @@
 .landing-page-operating-box {
     @include justify-space-between;
     height: 100%;
+    padding: rem(100) 0;
 }

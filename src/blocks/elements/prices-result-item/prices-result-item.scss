@@ -1,0 +1,25 @@
+@import "./__price/prices-result-item__price.scss";
+@import "./__text-title/prices-result-item__text-title.scss";
+@import "./__title/prices-result-item__title";
+@import "./__list/prices-result-item__list.scss";
+
+
+.prices-result-item {
+    // border: 1px solid black;
+    width: rem(380);
+    height: rem(220);
+    display: grid;
+    grid-template-areas:
+        "title      title"
+        "text-title price"
+        "list       price";
+    grid-template-rows: 20% 20% 60%;
+    grid-template-columns: 75% 25%;
+    @include fontBody;
+    padding: rem(15);
+    box-sizing: border-box;
+    background-color: $white;
+    margin-bottom: rem(15);
+   
+    
+}

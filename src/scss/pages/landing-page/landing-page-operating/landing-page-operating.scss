@@ -5,7 +5,9 @@
 @import "./landing-page-operating-item/__img/landing-page-operating-item__img";
 
 .landing-page-operating {
-    height: calc(100vh - 80px);
-    padding: rem(50) 0;
+   box-sizing: content-box;
+
+   
+
     
 }

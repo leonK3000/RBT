@@ -1,0 +1,11 @@
+mixin pricesResultItem(Title, list, price)
+    .prices-result-item
+        .prices-result-item__title= Title
+        .prices-result-item__text-title Может потребоваться:
+        ul(class="prices-result-item__list")
+            - for (var value of list)
+                li(class="prices-result-item__list-item")= value
+        .prices-result-item__price= price
+
+
+

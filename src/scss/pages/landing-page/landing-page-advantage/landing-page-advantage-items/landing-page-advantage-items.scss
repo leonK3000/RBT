@@ -2,4 +2,8 @@
     @include justify-space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    // padding-bottom: rem(200);
+    // padding-top: rem(100);
+    box-sizing: border-box;
 }

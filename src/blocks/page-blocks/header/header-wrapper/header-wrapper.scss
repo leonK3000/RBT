@@ -5,12 +5,13 @@
 
     box-shadow: $headerShadow;
     box-sizing: border-box; 
-    // height: rem(115);
+    height: rem(120);
     width: 100%;
+    position: absolute;
  
     // position: fixed;
     // top: 0;
-    // z-index: 10;
+    z-index: 10;
 
     // @media screen and (max-width: 1024px) and (min-width: 800px) {
     //     height: rem(100);

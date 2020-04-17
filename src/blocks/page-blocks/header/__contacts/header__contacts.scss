@@ -1,9 +1,17 @@
 .header__contacts {
-    grid-area: contacts;
+    
     @include justify-space-between;
     @include fontH2(rem(16));
     padding: 0 rem(35);
     color: $dark75;
- 
+    grid-area: contacts;
+    display: grid;
+    grid-template-areas:
+        "phone adress"
+        "phone time";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 35% 65%;
+   
+    
 
 }

@@ -1,0 +1,22 @@
+.prices-result-item__list {
+    line-height: rem(22);
+    
+    & > li {
+        position: relative;
+        padding-left: rem(25);
+        font-size: rem(13);
+       
+
+        &:before {
+            position: absolute;
+            top: rem(8);
+            left: rem(4);
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $dark75;;
+        }
+        
+    };
+}
