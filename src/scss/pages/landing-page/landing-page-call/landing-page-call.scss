@@ -1,0 +1,20 @@
+@import './call-box/call-box.scss';
+@import './call-box-wrapper/call-box-wrapper.scss';
+@import './call-box/__callback/call-box__callback.scss';
+@import './call-box/__direct-call/call-box__direct-call.scss';
+@import './call-box/__input/call-box__input.scss';
+@import './call-box/__text/call-box__text.scss';
+@import './call-box/__title/call-box__title.scss';
+@import './messenger/messengers.scss';
+@import './messenger/_tm/messengers_tm.scss';
+@import './messenger/_vr/messengers_vr.scss';
+@import './messenger/_wa/messengers_wa.scss';
+@import './line-solid/line-solid.scss';
+@import './messenger/__item/messengers__item.scss';
+
+.landing-page-call {
+    height: rem(200);
+
+    // ВРЕМЕННО
+    margin-bottom: rem(500);
+}

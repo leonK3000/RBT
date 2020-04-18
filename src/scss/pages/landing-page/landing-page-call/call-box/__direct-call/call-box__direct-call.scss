@@ -1,0 +1,21 @@
+.call-box__direct-call {
+    position: relative;
+    
+    background-image: linear-gradient($dark25, $red);
+    & p {
+        color: $white;
+    }
+    &:after {
+        content: "phone_in_talk";
+        @include material-icon(rem(30));
+        color: $white;
+        position: absolute;
+        left: 5%;
+        top: 20%;
+    }
+    &:hover p {
+        font-weight: bolder;
+        transition: 1s;
+    }
+    
+}

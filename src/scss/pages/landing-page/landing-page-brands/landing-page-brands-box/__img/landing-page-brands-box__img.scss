@@ -1,0 +1,10 @@
+.landing-page-brands-box__img {
+    width: rem(150);
+    margin: rem(10);
+    box-shadow:rem(5) rem(15) rem(15) $dark10;
+    &:hover {
+        transform: scale(1.15);
+        transition: 1s;
+    }
+    
+}

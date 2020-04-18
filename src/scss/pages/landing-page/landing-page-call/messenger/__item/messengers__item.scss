@@ -1,0 +1,5 @@
+.messengers__item {
+    @include fontH2(rem(15), rem(18));
+    color: $dark75;
+    
+}

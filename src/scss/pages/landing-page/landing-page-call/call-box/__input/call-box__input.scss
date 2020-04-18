@@ -1,0 +1,8 @@
+.call-box__input {
+    height: rem(50);
+    width: rem(300);
+    @include fontBody(rem(25));
+    border: 1px solid $dark75;
+    border-radius: rem(3);
+    @include justify-center;
+}

@@ -1,0 +1,14 @@
+.footer-content {
+    min-width: $minWidth;
+    max-width: $maxWidth;
+    height: 100%;
+    
+    // @include justify-space-between;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "footer-logo footer-text footer-contacts"
+        "copyright   copyright   copyright";
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+}

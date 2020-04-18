@@ -1,0 +1,9 @@
+.call-box__title {
+    @include fontH2(rem(20));
+    height: rem(100);
+    width: 100%;
+    @include justify-center;
+    color: $dark75;
+    border-bottom: 1px solid $dark25;
+    
+}

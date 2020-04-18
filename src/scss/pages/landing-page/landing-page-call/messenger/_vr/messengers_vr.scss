@@ -1,0 +1,18 @@
+.messengers_vr {
+    position: relative;
+    
+
+    &:before {
+        content: "";
+        width: rem(30);
+        height: rem(30);
+        position: absolute;
+        left: -25%;
+        top: -25%;
+        // background-color: red;
+        background-image: url(/assets/img/pictures/messengers_logo/viber_logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}

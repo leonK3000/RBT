@@ -122,22 +122,41 @@ block content
           img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_repair.svg")
     .landing-page-brands.landing-page-item
       .landing-page__title ТЕХНИКА, С КОТОРОЙ МЫ РАБОТАЕМ
+      .landing-page-brands-box
+        - for (var i=1; i<48; i++)
+          - var path = './assets/img/pictures/brands/brand_' + i + '.jpg'
+          img(class="landing-page-brands-box__img" src=path)
 
     .landing-page-call.landing-page-item
-      .landing-page__title КАК С НАМИ СВЯЗАТЬСЯ
-      .landing-page-call__direct-call
-        .direct-call__title Позвоните нам
-        .direct-call__text Позвоните нам по телефону и сообщите о неисправностях Вашей бытовой техники
-        .direct-call__phone-number-button 
-          input(type="button" value="8(800) 000-00-00")
-      .landing-page-call__callback
-        .callback-form       
-          form(action="")
-          .callback-form__title Заказать звонок
-          .callback-form__text Заполните форму и мы перезвоним Вам в течение 3-х минут
-          .callback-form__name
-            input(class="callback-form__input-name" type=text, placeholder="Ваше имя")
-          .callback-form__phone-number
-            input(class="callback-form__input-phone-number" type=text, placeholder="+7 (___) ___-__-__")
-          .callback-form__button
-            input(class="callback-form__input-button" type="button", value="Позвоните мне!")
+      .landing-page__title 
+        p КАК С НАМИ СВЯЗАТЬСЯ
+      .call-box-wrapper
+        .call-box
+          .call-box__title 
+            p БЕСПЛАТНЫЙ ЗВОНОК
+          .call-box__text 
+            p Позвоните нам по бесплатному номеру и сообщите о проблеме
+          .call-box__direct-call
+            a( href="tel:88002001030") 
+              p(class="call-box__input") 8 800 200 10 30
+        .line-solid
+        .call-box
+          .call-box__title 
+            p НАПИСАТЬ В МЕССЕНДЖЕР
+          .call-box__text 
+            p Напишите нам в один из мессенжеров
+          .messengers
+            a(href="tg://resolve?domain=NikName") 
+              p(class="messengers__item messengers_tm") Написать в Telegram
+            a(href="https://wa.me/79219052453?text=Здравствуйте.%20Вопрос%20по%20поводу%20ремонта.") 
+              p(class="messengers__item messengers_wa") Написать в Whatsapp
+            a(href="viber://add?number=380950000000") 
+              p(class="messengers__item messengers_vr") Написать в Viber
+        .line-solid
+        .call-box
+          .call-box__title 
+            p ПОЗВОНИТЬ ВАМ
+          .call-box__text 
+            p Оставьте свой номер телефона, и мы перезвоним Вам в течение 5 минут
+          .call-box__callback
+            input(class="call-box__input" type="text" placeholder="+7-___-__-__")

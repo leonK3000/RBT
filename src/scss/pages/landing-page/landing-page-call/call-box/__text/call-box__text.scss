@@ -1,0 +1,6 @@
+.call-box__text {
+    @include fontH3(rem(15), rem(25));
+    text-align: center;
+    height: rem(150);
+    padding-top: rem(25);
+}
