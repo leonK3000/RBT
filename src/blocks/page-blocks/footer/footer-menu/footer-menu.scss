@@ -1,0 +1,9 @@
+.footer-menu {
+    grid-area: footer-menu;
+    & a {
+        color: inherit;
+        &:hover {
+            color: $red;
+        }
+    }
+}

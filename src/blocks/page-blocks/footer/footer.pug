@@ -1,14 +1,15 @@
 include ../../elements/logo/logo.pug
 
 mixin footer
+    +line_wide
     footer(class='footer-wrapper')
         .footer-content
-            .footer-logo
+            .footer-logo.footer-column
                 +logo
                 .footer-text
                     p Служба выездного ремонта "РемБытТехника".
                     p Выполняем профессиональный ремонт бытовой техники с 2005 года.
-            menu(class="footer-menu")
+            menu(class="footer-menu footer-column")
                 li(class="footer-menu__item")
                     a(href="#") ГЛАВНАЯ
                 li(class="footer-menu__item")
@@ -17,12 +18,13 @@ mixin footer
                     a(href="#") ФИЛИАЛЫ
                 li(class="footer-menu__item")
                     a(href="#") ВЫЗВАТЬ МАСТЕРА
-            .footer-contacts
+            .footer-contacts.footer-column
                 a(href="tel:88002001030") 
                     p(class="footer-contacts__tel") 8 800 200 10 30
                 a(href="tel:88121234567") 
                     p(class="footer-contacts__tel") 8 812 123 45 67
                 p(class="footer-contacts__adress") г. Санкт-Петербург, Проспект Просвещения, д. 53
-            .footer-copyright
-                p ООО "Дэйтон" &copy 2005-2020
-                p ОРГН 123456548798798
+        +line_wide
+        .footer-copyright
+            p ООО "Дэйтон" &copy 2005-2020
+            p ОРГН 123456548798798

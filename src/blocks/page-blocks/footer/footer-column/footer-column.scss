@@ -1,13 +1,9 @@
-.footer-copyright {
-    height: rem(30);
+.footer-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    padding: rem(10) 0;
+    padding: rem(20) rem(20);
     @include fontH2(rem(10), rem(12));
     font-weight: normal;
-    & p {
-        
-    }
 }

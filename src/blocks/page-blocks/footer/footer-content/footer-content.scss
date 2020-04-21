@@ -2,13 +2,13 @@
     min-width: $minWidth;
     max-width: $maxWidth;
     height: 100%;
+    width: 100%;
     
     // @include justify-space-between;
     margin: auto;
     display: grid;
     grid-template-areas:
-        "footer-logo footer-text footer-contacts"
-        "copyright   copyright   copyright";
-    grid-template-rows: 80% 20%;
+        "footer-logo footer-menu footer-contacts";
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }

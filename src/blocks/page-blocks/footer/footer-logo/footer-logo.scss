@@ -1,0 +1,7 @@
+.footer-logo {
+    grid-area: footer-logo;
+    justify-content: space-between;
+    & .logo {
+        width: 50%;
+    }
+}
