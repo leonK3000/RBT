@@ -97,10 +97,10 @@ module.exports = {
       template: `${PATHS.src}/index.pug`,
       filename: './index.html'
     }),
-    ...PAGES.map(page => new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/${page}`,
-      filename: `./${page.replace(/\.pug/,'.html')}`,
-    })),
+    // ...PAGES.map(page => new HtmlWebpackPlugin({
+    //   template: `${PAGES_DIR}/${page}`,
+    //   filename: `./${page.replace(/\.pug/,'.html')}`,
+    // })),
 
     new HtmlWebpackPugPlugin(),
     
