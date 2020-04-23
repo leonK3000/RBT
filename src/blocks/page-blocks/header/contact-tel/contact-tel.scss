@@ -4,6 +4,7 @@
     padding-left: rem(30);
     grid-area: phone;
     
+    
     &:before {
         content: "call";
         @include material-icon(rem(20));

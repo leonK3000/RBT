@@ -6,9 +6,14 @@ block variables
 
 block content
   include ../../blocks/elements/elements.pug
+  
   .landing-page-wrapper
-    .landing-page-main
-      .landing-page__title ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
+    a(name="landing-page-main")
+ 
+    div(class="landing-page-main landing-page-item_narrow" )
+
+      .landing-page__title 
+        p ВЫЕЗДНОЙ РЕМОНТ БЫТОВОЙ ТЕХНИКИ В САНКТ-ПЕТЕРБУРГЕ И ПРИГОРОДЕ
       ul(class="landing-page-main-services")
         li(class="landing-page-main-services-item")
           a(href="#")
@@ -29,8 +34,10 @@ block content
         |ВОЗМОЖНО В ВАШЕМ СЛУЧАЕ РЕМОНТ НЕ ТРЕБУЕТСЯ!
        
     
-    .landing-page-advantage.landing-page-item
-      .landing-page__title НАШИ ПРИЕМУЩЕСТВА
+    div(class="landing-page-advantage landing-page-item landing-page-item_narrow" )
+      a(name="landing-page-advantage")
+      .landing-page__title 
+        p НАШИ ПРИЕМУЩЕСТВА
       .landing-page-advantage-items
         +advantageItem(
           "БЕСПЛАТНАЯ ДИАГНОСТИКА",
@@ -62,46 +69,53 @@ block content
           "У нас одни из самых низких цен в городе",
           "./assets/img/pictures/icon_save.svg"
         )
-    .landing-page-prices.landing-page-item
+    a(name="landing-page-prices")
+    div(class="landing-page-prices landing-page-item landing-page-item_wide" )
+      
       .landing-page__title УСЛУГИ И ЦЕНЫ
       .prices-wrapper
-        .prices-choise
-          .prices-choise__repair-fridge.prices-choise__repair.prices-choise__item_not-selected
+        .prices-choise.landing-page-item_narrow
+          .prices-choise__repair-fridge.prices-choise__repair.prices-choise__item_selected
             .choise-repair-title Неисправности холодильников
-          .prices-choise__repair-washmach.prices-choise__repair.prices-choise__item_selected
+          .prices-choise__repair-washmach.prices-choise__repair.prices-choise__item_not-selected
             .choise-repair-title Неисправности стиральных машин
           .prices-choise__repair-dishwash.prices-choise__repair.prices-choise__item_not-selected
             .choise-repair-title Неисправности посудомоечных машин
-        .prices-result-fridge.prices-result
-          +pricesResultItem("Холодильник не морозит", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Замена компрессора", "Ремонт электронного модуля"], 750)
-          +pricesResultItem("Холодильник громко работает", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Замена компрессора"], 750)
-          +pricesResultItem("Холодильник перемораживает", ["Замена термостата", "ремонт электронного модуля", "Ремонт задвижки"], 500)
-          +pricesResultItem("Холодильник недостаточно морозит", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Ремонт системы оттайки"], 550)
-          +pricesResultItem("Холодильник пищит", ["Заправка хладагентом", "Устранение утечки", "Ремонт электронного модуля"], 550)
-          +pricesResultItem("Холодильник подтекает", ["Ремонт системы оттакйки", "Чистка дренажной системы"], 300)
-          +pricesResultItem("Холодильник не включается", ["Ремонт пускового реле", "Ремонт электронного модуля"], 500)
-          +pricesResultItem("Износился уплотнитель двери", ["Замена уплотнителя двери", "Проклейка прежнего уплотнителя"], 350)
-        .prices-result-washmach.prices-result
-          +pricesResultItem("Стиральная машина не сливает", ["Прочистка сливной системы", "Замена сливной помпы", "Ремонт электронного модуля"], 550)
-          +pricesResultItem("Стиральная машина шумно работает", ["Замена подшипников", "Замена амортизаторов"], 900)
-          +pricesResultItem("Стиральная машина не набирает воду", ["Ремонт наливного клапана", "Ремонт электронного модуля", "Прочистка наливной системы"], 850)
-          +pricesResultItem("Стиральная машина не отжимает белье", ["Прочистка сливной системы", "Замена сливной помпы", "Замена ремня", "Замена таходатчика"], 500)
-          +pricesResultItem("Стиральная машина не греет воду", ["Замена ТЭНа", "Замена датчика температуры", "Ремонт электронного модуля"], 300)
-          +pricesResultItem("Стиральная машина не включается", ["Ремонт сетевого фильтра", "Ремонт электронного модуля"], 450)
-          +pricesResultItem("Стиральная машина не крутит барабан", ["Замена щеток двигателя", "Замена ремня", "Замена подшипников"], 700)
-          +pricesResultItem("Стиральная машина подтекает", ["Ремонт сливной системы", "Замена сальника", "Замена манжеты"], 600)
-          +pricesResultItem("Подключение стиральной машины", ["Врезка в существующие коммуникации", "Отключение старой стиральной машины"], 200)
-        .prices-result-dishwash.prices-result
-          +pricesResultItem("Посудомоечная машины не набирает воду", ["Прочистка сливной системы", "Замена сливной помпы", "Ремонт электронного модуля"], 550)
-          +pricesResultItem("Посудомоечная машины не сливает воду", ["Замена подшипников", "Замена амортизаторов"], 900)
-          +pricesResultItem("Посудомоечная машина подтекает", ["Ремонт наливного клапана", "Ремонт электронного модуля", "Прочистка наливной системы"], 850)
-          +pricesResultItem("Посудомоечная машина не греет воду", ["Прочистка сливной системы", "Замена сливной помпы", "Замена ремня", "Замена таходатчика"], 500)
-          +pricesResultItem("Посудомоечная машина все время сливает воду", ["Замена ТЭНа", "Замена датчика температуры", "Ремонт электронного модуля"], 300)
-          +pricesResultItem("Посудомоечная машина не включается", ["Ремонт сетевого фильтра", "Ремонт электронного модуля"], 450)
-    .landing-page-map.landing-page-item
+        .prices-result-fridge.prices-result.prices_result_visible
+          .prices-result-box
+            +pricesResultItem("Холодильник не морозит", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Замена компрессора", "Ремонт электронного модуля"], 750)
+            +pricesResultItem("Холодильник громко работает", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Замена компрессора"], 750)
+            +pricesResultItem("Холодильник перемораживает", ["Замена термостата", "ремонт электронного модуля", "Ремонт задвижки"], 500)
+            +pricesResultItem("Холодильник недостаточно морозит", ["Заправка хладагентом", "Устранение утечки", "Устранение засора", "Ремонт системы оттайки"], 550)
+            +pricesResultItem("Холодильник пищит", ["Заправка хладагентом", "Устранение утечки", "Ремонт электронного модуля"], 550)
+            +pricesResultItem("Холодильник подтекает", ["Ремонт системы оттакйки", "Чистка дренажной системы"], 300)
+            +pricesResultItem("Холодильник не включается", ["Ремонт пускового реле", "Ремонт электронного модуля"], 500)
+            +pricesResultItem("Износился уплотнитель двери", ["Замена уплотнителя двери", "Проклейка прежнего уплотнителя"], 350)
+        .prices-result-washmach.prices-result.prices_result_invisible
+          .prices-result-box
+            +pricesResultItem("Стиральная машина не сливает", ["Прочистка сливной системы", "Замена сливной помпы", "Ремонт электронного модуля"], 550)
+            +pricesResultItem("Стиральная машина шумно работает", ["Замена подшипников", "Замена амортизаторов"], 900)
+            +pricesResultItem("Стиральная машина не набирает воду", ["Ремонт наливного клапана", "Ремонт электронного модуля", "Прочистка наливной системы"], 850)
+            +pricesResultItem("Стиральная машина не отжимает белье", ["Прочистка сливной системы", "Замена сливной помпы", "Замена ремня", "Замена таходатчика"], 500)
+            +pricesResultItem("Стиральная машина не греет воду", ["Замена ТЭНа", "Замена датчика температуры", "Ремонт электронного модуля"], 300)
+            +pricesResultItem("Стиральная машина не включается", ["Ремонт сетевого фильтра", "Ремонт электронного модуля"], 450)
+            +pricesResultItem("Стиральная машина не крутит барабан", ["Замена щеток двигателя", "Замена ремня", "Замена подшипников"], 700)
+            +pricesResultItem("Стиральная машина подтекает", ["Ремонт сливной системы", "Замена сальника", "Замена манжеты"], 600)
+        .prices-result-dishwash.prices-result.prices_result_invisible
+          .prices-result-box
+            +pricesResultItem("Подключение стиральной машины", ["Врезка в существующие коммуникации", "Отключение старой стиральной машины"], 200)
+            +pricesResultItem("Посудомоечная машины не набирает воду", ["Прочистка сливной системы", "Замена сливной помпы", "Ремонт электронного модуля"], 550)
+            +pricesResultItem("Посудомоечная машины не сливает воду", ["Замена подшипников", "Замена амортизаторов"], 900)
+            +pricesResultItem("Посудомоечная машина подтекает", ["Ремонт наливного клапана", "Ремонт электронного модуля", "Прочистка наливной системы"], 850)
+            +pricesResultItem("Посудомоечная машина не греет воду", ["Прочистка сливной системы", "Замена сливной помпы", "Замена ремня", "Замена таходатчика"], 500)
+            +pricesResultItem("Посудомоечная машина все время сливает воду", ["Замена ТЭНа", "Замена датчика температуры", "Ремонт электронного модуля"], 300)
+            +pricesResultItem("Посудомоечная машина не включается", ["Ремонт сетевого фильтра", "Ремонт электронного модуля"], 450)
+    a(name="landing-page-map")
+    div(class="landing-page-map landing-page-item landing-page-item_wide" )
+      
       .landing-page__title НАШИ ФИЛИАЛЫ
-      iframe(class="landing-page-map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c399c3744973741dbc8a0f209c591876218a33db80bf3560b05dc9a086456f0&amp;source=constructor" width="100%" height="450" frameborder="0")
-    .landing-page-operating.landing-page-item
+      iframe(class="landing-page-map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaa8d553c8ea0ed30bb61d0ac82da3d046dfd898a4c6388b4f027161529a93999&amp;source=constructor" width="100%" height="450" frameborder="0")
+    .landing-page-operating.landing-page-item.landing-page-item_narrow
       .landing-page__title  ПОРЯДОК РАБОТЫ
       .landing-page-operating-box
         .landing-page-operating-item
@@ -120,14 +134,15 @@ block content
         .landing-page-operating-item 
           .landing-page-operating-item__text Выполнение ремонта и оплата
           img(class="landing-page-operating-item__img" src="./assets/img/pictures/icon_repair.svg")
-    .landing-page-brands.landing-page-item
+    .landing-page-brands.landing-page-item.landing-page-item_wide
       .landing-page__title ТЕХНИКА, С КОТОРОЙ МЫ РАБОТАЕМ
       .landing-page-brands-box
         - for (var i=1; i<48; i++)
           - var path = './assets/img/pictures/brands/brand_' + i + '.jpg'
           img(class="landing-page-brands-box__img" src=path)
-
-    .landing-page-call.landing-page-item
+    a(name="landing-page-call")
+    div(class="landing-page-call landing-page-item landing-page-item_narrow" )
+      
       .landing-page__title 
         p КАК С НАМИ СВЯЗАТЬСЯ
       .call-box-wrapper

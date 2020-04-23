@@ -9,4 +9,5 @@ import './jquery.air-datapicker/datepicker';
 import './dropDownList/dropDownList';
 import './d3/d3';
 import './donutChart/donutChart';
+import './ShowElements/ShowElements';
 

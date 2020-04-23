@@ -1,7 +1,7 @@
 .landing-page__title {
     @include fontH1;
     @include justify-center;
-    height: rem(100);
+    height: rem(120);
     width: 100%;
     box-sizing: border-box;
     color: $red;

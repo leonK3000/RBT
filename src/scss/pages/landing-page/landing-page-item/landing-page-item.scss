@@ -1,3 +1,7 @@
+@import "./_wide/landing-page-item_wide.scss";
+@import "./_narrow/landing-page-item_narrow.scss";
+
+
 .landing-page-item {
     display: flex;
     flex-direction: column;
@@ -6,7 +10,7 @@
     box-sizing: content-box;
     // height: calc(100vh);
     // padding-top: rem(160);
-    padding-bottom: rem(100);
+    padding: rem(70) 0 rem(100);
     
     
 }

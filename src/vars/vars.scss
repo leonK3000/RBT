@@ -24,7 +24,9 @@ $colorFontBody: $dark75;
 /*font names*/
 
 /*font-size*/
-$mainFontSize: 25px;
+$mainFontSize: 24px;
+
+
 $fontSizeH1: rem(28);
 $fontSizeH2: rem(19);
 $fontSizeH3: rem(16);
@@ -67,8 +69,8 @@ $minWidth: 320px;
 // $path: '/FSD';
 $path: '';
 
-@media screen and (max-width: 1160px) {
-    
+@media screen and (max-width: 1200px) {
+   
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,28 +1,30 @@
 include ../../elements/logo/logo.pug
 
 mixin header
-    header(class="header-wrapper")
-        .header-content
-            .header__logo-container 
-                +logo
+    header(class="header")
+        .header-wrapper
+            .header-content
+                .header__logo-container 
+                    +logo
 
-                a(href="index.html") 
+                    a(href="index.html") 
 
-            menu(class="menu")
-                li(class="menu__item")
-                    a(href="#") ГЛАВНАЯ
-                li(class="menu__item")
-                    a(href="#") УСЛУГИ И СТОИМОСТЬ
-                li(class="menu__item")
-                    a(href="#") ФИЛИАЛЫ
-                li(class="menu__item")
-                    a(href="#") ВЫЗВАТЬ МАСТЕРА
-                
-            .header__contacts
-                a(class="contact-tel" href="tel:88002001030") 8 800 200 10 30
-                .contact-adress г. Санкт-Петербург, Проcпект Просвещения, д. 53
-                .contact-time Мы работаем с 8:00 до 23:00 без выходных и праздничных дней
-        .header__line
+                menu(class="menu")
+                    li(class="menu__item")
+                        a(href="#landing-page-main") ГЛАВНАЯ
+                    li(class="menu__item")
+                        a(href="#landing-page-prices") УСЛУГИ И СТОИМОСТЬ
+                    li(class="menu__item")
+                        a(href="#landing-page-map") ФИЛИАЛЫ
+                    li(class="menu__item")
+                        a(href="#landing-page-call") ВЫЗВАТЬ МАСТЕРА
+                    
+                .header__contacts
+                    a(class="contact-tel" href="tel:88002001030") 
+                        p 8 800 200 10 30
+                    .contact-adress г. Санкт-Петербург, Проcпект Просвещения, д. 53
+                    .contact-time Мы работаем с 8:00 до 23:00 без выходных и праздничных дней
+            .header__line
                 
             
                 
